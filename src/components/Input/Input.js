@@ -14,12 +14,12 @@ function Input({ addGuess, disabled }) {
 	}
 	return (
 		<form
-			class="guess-input-wrapper"
+			className="guess-input-wrapper"
 			onSubmit={(event) => {
 				event.preventDefault();
 				submitInput();
 			}}>
-			<label for="guess-input">Enter guess:</label>
+			<label htmlFor="guess-input">Enter guess:</label>
 			<input
 				id="guess-input"
 				type="text"

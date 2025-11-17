@@ -2,11 +2,11 @@ import React from "react";
 
 function Guesses({ guesses }) {
 	return (
-		<div class="guess-results">
-			{guesses.map((guess, id) => (
-				<p class="guess" key={id}>
-					{guess.map((char) => (
-						<span class={`cell ${char.status}`} key={char.key}>
+		<div className="guess-results">
+			{guesses.map(({ value, key }) => (
+				<p className="guess" key={key}>
+					{value.map((char) => (
+						<span className={`cell ${char.status}`} key={char.key}>
 							{char.value}
 						</span>
 					))}
